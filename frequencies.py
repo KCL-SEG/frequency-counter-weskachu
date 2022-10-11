@@ -4,4 +4,11 @@
 def frequencies(items):
     frequencies = {}
     # Your code goes here
+    for item in items:
+        key = str(item)
+        if key in frequencies:
+            frequencies[key] += 1
+        elif not key in frequencies:
+            frequencies = 1
+
     return frequencies
